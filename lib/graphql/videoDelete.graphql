@@ -1,0 +1,8 @@
+mutation deleteOneVideo($deleteOneVideoWhere2: VideoWhereUniqueInput!) {
+  deleteOneVideo(where: $deleteOneVideoWhere2) {
+    rentedBy
+    returnDate
+    status
+    title
+  }
+}

@@ -1,0 +1,9 @@
+query getVideos {
+    videos {
+        id
+        title
+        status
+        rentedBy
+        returnDate
+    }
+}

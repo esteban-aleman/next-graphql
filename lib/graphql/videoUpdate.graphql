@@ -1,0 +1,8 @@
+mutation updateOneVideo($data: VideoUpdateInput!, $where: VideoWhereUniqueInput!) {
+  updateOneVideo(data: $data, where: $where) {
+    rentedBy
+    returnDate
+    status
+    title
+  }
+}

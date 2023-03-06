@@ -1,0 +1,8 @@
+mutation createOneVideo($data: VideoCreateInput!) {
+  createOneVideo(data: $data) {
+    rentedBy
+    returnDate
+    status
+    title
+  }
+}
