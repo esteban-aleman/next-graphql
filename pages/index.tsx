@@ -14,13 +14,13 @@ import { initializeApolloClient } from "@/lib/api";
 // import { useQuery } from "@apollo/client";
 
 export default function Home() {
-  const { data } = useGetVideosQuery({
-    notifyOnNetworkStatusChange: true,
-  });
   // const { data } = useQuery(GetVideosDocument);
   const [newTitle, setNewTitle] = useState("");
   const [openAdd, setOpenAdd] = useState(false);
   const [currentEdit, setCurrentEdit] = useState<Video | null>(null);
+  const { data } = useGetVideosQuery({
+    notifyOnNetworkStatusChange: true,
+  });
   const [createOneVideo] = useCreateOneVideoMutation();
   const [updateOneVideo] = useUpdateOneVideoMutation();
   const [deleteOneVideo] = useDeleteOneVideoMutation();
